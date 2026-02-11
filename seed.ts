@@ -106,9 +106,10 @@ async function main() {
   console.log('🌱 Starting seed...');
 
   try {
-    // Optional: Clear the table first so we don't get duplicates if we run this twice
-    console.log('🧹 Clearing existing books...');
-    await db.delete(books); 
+    // Clear the table and reset the ID sequence
+    console.log('🧹 Clearing existing books and resetting ID sequence...');
+    await db.delete(books);
+    await client`ALTER SEQUENCE books_id_seq RESTART WITH 1`;
 
     // Insert the new data
     console.log('📖 Inserting Stephen King books...');
