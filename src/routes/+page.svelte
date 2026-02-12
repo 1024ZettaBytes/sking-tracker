@@ -46,6 +46,20 @@
   class="min-h-screen bg-[#f5f2eb] text-stone-700"
   style="font-family: 'Libre Baskerville', Georgia, serif;"
 >
+  <!-- Navigation -->
+  <nav
+    class="sticky top-0 z-40 flex items-center justify-end px-4 sm:px-6 md:px-12 py-4 sm:py-6 backdrop-blur-md bg-[#f5f2eb]/80"
+  >
+    <div class="flex items-center gap-4 sm:gap-8">
+      <a
+        href="/catalog"
+        class="text-stone-600 hover:text-stone-900 transition-colors text-xs sm:text-sm tracking-wider uppercase"
+        style="font-family: 'JetBrains Mono', monospace;">Catalog</a
+      >
+      <ProfileMenu session={data.session} />
+    </div>
+  </nav>
+
   <!-- Cinematic Hero -->
   <section class="relative h-screen overflow-hidden">
     <!-- Grain overlay -->
@@ -87,20 +101,6 @@
     <div
       class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-700 to-transparent"
     ></div>
-
-    <!-- Navigation -->
-    <nav
-      class="relative z-40 flex items-center justify-between px-4 sm:px-6 md:px-12 py-4 sm:py-6"
-    >
-      <div class="flex items-center gap-4 sm:gap-8">
-        <a
-          href="/catalog"
-          class="text-stone-600 hover:text-stone-900 transition-colors text-xs sm:text-sm tracking-wider uppercase"
-          style="font-family: 'JetBrains Mono', monospace;">Catalog</a
-        >
-        <ProfileMenu session={data.session} />
-      </div>
-    </nav>
 
     <!-- Hero Content -->
     <div

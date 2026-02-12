@@ -13,7 +13,6 @@ export const { handle } = SvelteKitAuth({
         return false;
       }
 
-      // Check if user exists in database
       const existingUser = await db
         .select()
         .from(users)
@@ -21,7 +20,6 @@ export const { handle } = SvelteKitAuth({
         .limit(1);
 
       if (existingUser.length === 0) {
-        // Create new user in database
         await db.insert(users).values({
           email: user.email,
           provider: account.provider,
@@ -29,7 +27,6 @@ export const { handle } = SvelteKitAuth({
           updatedAt: new Date(),
         });
       } else {
-        // Update the updatedAt timestamp on login
         await db
           .update(users)
           .set({ updatedAt: new Date() })
@@ -39,7 +36,6 @@ export const { handle } = SvelteKitAuth({
       return true;
     },
     async session({ session }) {
-      // Add user id from database to session
       if (session.user?.email) {
         const dbUser = await db
           .select()

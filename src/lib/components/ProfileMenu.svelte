@@ -51,7 +51,7 @@
 
     {#if isOpen}
       <div
-        class="absolute left-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl border border-stone-200 overflow-hidden z-50"
+        class="absolute right-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl border border-stone-200 overflow-hidden z-50"
         style="font-family: 'JetBrains Mono', monospace;"
       >
         <!-- User info header -->
@@ -87,7 +87,7 @@
         <!-- Menu items -->
         <div class="py-2">
           <a
-            href="/catalog"
+            href="/collection"
             class="flex items-center gap-3 px-4 py-2 text-sm text-stone-600 hover:bg-stone-50 hover:text-stone-900 transition-colors"
           >
             <svg
@@ -139,7 +139,6 @@
     class="bg-[#CCC0AF] hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-[#878074] hover:border-blue-500 inline-flex items-center rounded"
     style="font-family: 'JetBrains Mono', monospace; cursor: pointer;"
   >
-    
     Sign in
     <img
       src={GoogleIcon}
