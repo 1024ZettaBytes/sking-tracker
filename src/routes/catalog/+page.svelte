@@ -15,9 +15,9 @@
   <title>Catalog | SK Tracker</title>
 </svelte:head>
 
-<div class="min-h-screen bg-zinc-950 text-zinc-100">
+<div class="min-h-screen bg-[#f5f2eb] text-zinc-100">
   <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/50">
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#f5f2eb] border-b border-zinc-800/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div class="flex items-center gap-4">
