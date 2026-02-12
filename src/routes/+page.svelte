@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { PageData } from "./$types";
-  import { signIn } from "@auth/sveltekit/client";
-  import GoogleIcon from "$lib/assets/icons/google.svg";
+  import ProfileMenu from "$lib/components/ProfileMenu.svelte";
   let { data }: { data: PageData } = $props();
 
   let currentQuoteIndex = $state(0);
@@ -99,20 +98,7 @@
           class="text-stone-600 hover:text-stone-900 transition-colors text-xs sm:text-sm tracking-wider uppercase"
           style="font-family: 'JetBrains Mono', monospace;">Catalog</a
         >
-        <button
-          onclick={() => signIn("google")}
-          class="bg-[#CCC0AF] hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-[#878074] hover:border-blue-500 inline-flex items-center rounded"
-          style="font-family: 'JetBrains Mono', monospace; cursor: pointer;"
-        >
-          <img
-            src={GoogleIcon}
-            alt="Google Icon"
-            width="24"
-            height="24"
-            class="mr-2"
-          />
-          Log In</button
-        >
+        <ProfileMenu session={data.session} />
       </div>
     </nav>
 

@@ -43,6 +43,7 @@ jspm_packages/
 bun.lock
 .svelte-kit
 build
+drizzle
 
 # TypeScript v1 declaration files
 typings/

@@ -1,4 +1,4 @@
-import { pgTable, serial, text, boolean, integer, primaryKey } from 'drizzle-orm/pg-core';
+import { pgTable, serial, text, boolean, integer, primaryKey, timestamp } from 'drizzle-orm/pg-core';
 
 // 1. Books Catalog (Manually added by you)
 export const books = pgTable('books', {
@@ -19,7 +19,9 @@ export const books = pgTable('books', {
 export const users = pgTable('users', {
   id: serial('id').primaryKey(),
   email: text('email').notNull().unique(),
-  password: text('password').notNull()
+  provider: text('provider').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
 // 3. The Join Table (User <-> Books)

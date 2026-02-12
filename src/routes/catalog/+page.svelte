@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { PageData } from './$types';
+  import ProfileMenu from "$lib/components/ProfileMenu.svelte";
 
   let { data }: { data: PageData } = $props();
   let searchQuery = $state('');
@@ -21,7 +22,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div class="flex items-center gap-4">
-          <a href="/" class="text-zinc-500 hover:text-white transition-colors">
+          <a href="/" class="text-zinc-500 hover:text-white transition-colors" aria-label="Go back to home">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
             </svg>
@@ -31,17 +32,22 @@
           </h1>
         </div>
         
-        <!-- Search Bar -->
-        <div class="relative">
-          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
-          <input
-            type="text"
-            placeholder="Search books..."
-            bind:value={searchQuery}
-            class="w-full sm:w-64 pl-10 pr-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all"
-          />
+        <div class="flex items-center gap-4">
+          <!-- Search Bar -->
+          <div class="relative">
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <input
+              type="text"
+              placeholder="Search books..."
+              bind:value={searchQuery}
+              class="w-full sm:w-64 pl-10 pr-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all"
+            />
+          </div>
+          
+          <!-- Profile Menu -->
+          <ProfileMenu session={data.session} />
         </div>
       </div>
     </div>
