@@ -11,8 +11,13 @@ export const load: PageServerLoad = async ({ locals }) => {
   }
 
   const userId = parseInt(session.user.id!);
+  const language = session.user.language || 'ENG';
 
-  const allBooks = await db.select().from(books).orderBy(asc(books.year));
+  const allBooks = await db
+    .select()
+    .from(books)
+    .where(language === 'ES' ? eq(books.onlyEnglish, false) : eq(books.onlySpanish, false))
+    .orderBy(asc(books.year));
 
   const userInteractions = await db
     .select()
@@ -26,6 +31,9 @@ export const load: PageServerLoad = async ({ locals }) => {
     const interaction = interactionMap.get(book.id);
     return {
       ...book,
+      title: language === 'ES' && book.title ? book.title : (book.engTitle || book.title),
+      coverUrl: language === 'ES' && book.coverUrl ? book.coverUrl : (book.engCoverUrl || book.coverUrl),
+      synopsis: language === 'ES' && book.synopsis ? book.synopsis : (book.engSynopsis || book.synopsis),
       isOwned: interaction?.isOwned ?? false,
       isRead: interaction?.isRead ?? false,
       rating: interaction?.rating ?? null,

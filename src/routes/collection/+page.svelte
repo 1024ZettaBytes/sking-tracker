@@ -2,8 +2,12 @@
   import type { PageData } from "./$types";
   import ProfileMenu from "$lib/components/ProfileMenu.svelte";
   import { enhance } from "$app/forms";
+  import { translations, type Language } from "$lib/i18n";
 
   let { data }: { data: PageData } = $props();
+  let currentLang = $derived(
+    (data.session?.user?.language as Language) || "ENG",
+  );
 
   let sortedBooks = $derived(data.collection.sort((a, b) => a.year - b.year));
 
@@ -36,8 +40,13 @@
     class="sticky top-0 z-50 backdrop-blur-md bg-[#f5f2eb]/90 border-b border-stone-300"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-4">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+      >
+        <!-- Top Row (Mobile) / Left Side (Desktop) -->
+        <div
+          class="flex items-center justify-between sm:justify-start w-full sm:w-auto sm:gap-4"
+        >
           <a
             href="/"
             class="text-stone-500 hover:text-red-700 transition-colors"
@@ -57,9 +66,30 @@
               />
             </svg>
           </a>
-          <h1 class="text-2xl font-bold text-stone-800">My Collection</h1>
+
+          <!-- Mobile Profile -->
+          <div class="sm:hidden">
+            <ProfileMenu session={data.session} />
+          </div>
         </div>
-        <ProfileMenu session={data.session} />
+
+        <!-- Title Row (Mobile) / Attached to Left (Desktop) -->
+        <!-- We move title out of the flex container above to allow it to be its own row on mobile if needed, or structured differently. 
+             Actually, to match the desktop layout [Back][Title] ... [Profile], we can put title in the first div for desktop?
+             If we put title in first div: on mobile it sits next to Back. Space in middle for Logo?
+             Back (left) ... Logo ... Profile (right).
+             Title needs to be on next line.
+        -->
+        <h1
+          class="text-2xl font-bold text-stone-800 text-center sm:text-left sm:flex-1 sm:ml-4"
+        >
+          {translations[currentLang].myCollection}
+        </h1>
+
+        <!-- Desktop Profile -->
+        <div class="hidden sm:block">
+          <ProfileMenu session={data.session} />
+        </div>
       </div>
     </div>
   </header>
@@ -74,7 +104,8 @@
         >
           <span
             class="block text-stone-500 text-xs uppercase tracking-widest mb-1"
-            style="font-family: 'JetBrains Mono', monospace;">Total Books</span
+            style="font-family: 'JetBrains Mono', monospace;"
+            >{translations[currentLang].totalBooksLabel}</span
           >
           <span class="text-2xl sm:text-4xl font-bold text-stone-800"
             >{data.stats.total}</span
@@ -92,7 +123,8 @@
           <div class="relative z-10">
             <span
               class="block text-stone-500 text-xs uppercase tracking-widest mb-1"
-              style="font-family: 'JetBrains Mono', monospace;">Owned</span
+              style="font-family: 'JetBrains Mono', monospace;"
+              >{translations[currentLang].ownedLabel}</span
             >
             <span class="text-2xl sm:text-4xl font-bold text-stone-800"
               >{data.stats.owned}</span
@@ -116,7 +148,8 @@
           <div class="relative z-10">
             <span
               class="block text-red-700 text-xs uppercase tracking-widest mb-1"
-              style="font-family: 'JetBrains Mono', monospace;">Read</span
+              style="font-family: 'JetBrains Mono', monospace;"
+              >{translations[currentLang].readLabel}</span
             >
             <span class="text-2xl sm:text-4xl font-bold text-red-800"
               >{data.stats.read}</span
@@ -242,11 +275,9 @@
                             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                           ></path>
                         </svg>
-                      {:else if book.isOwned}
-                        ✓
                       {/if}
                     </div>
-                    Owned
+                    {translations[currentLang].markOwned}
                   </button>
                 </form>
 
@@ -291,11 +322,9 @@
                             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                           ></path>
                         </svg>
-                      {:else if book.isRead}
-                        ✓
                       {/if}
                     </div>
-                    Read
+                    {translations[currentLang].markRead}
                   </button>
                 </form>
               </div>
@@ -312,7 +341,7 @@
                     <span
                       class="text-xs font-bold uppercase tracking-wider text-stone-400"
                       style="font-family: 'JetBrains Mono', monospace;"
-                      >Rating</span
+                      >{translations[currentLang].rate}</span
                     >
                     <div class="flex items-center gap-1">
                       {#each Array(5) as _, i}

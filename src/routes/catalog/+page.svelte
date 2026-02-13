@@ -1,8 +1,12 @@
 <script lang="ts">
   import type { PageData } from "./$types";
   import ProfileMenu from "$lib/components/ProfileMenu.svelte";
+  import { translations, type Language } from "$lib/i18n";
 
   let { data }: { data: PageData } = $props();
+  let currentLang = $derived(
+    (data.session?.user?.language as Language) || "ENG",
+  );
   let searchQuery = $state("");
 
   let filteredBooks = $derived(
@@ -38,7 +42,10 @@
       <div
         class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
       >
-        <div class="flex items-center gap-4">
+        <!-- Top Row (Mobile) / Left Side (Desktop) -->
+        <div
+          class="flex items-center justify-between sm:justify-start w-full sm:w-auto sm:gap-4"
+        >
           <a
             href="/"
             class="text-stone-500 hover:text-red-700 transition-colors"
@@ -58,12 +65,39 @@
               />
             </svg>
           </a>
-          <h1 class="text-2xl font-bold text-stone-800">Book Catalog</h1>
+
+          <!-- Mobile Profile -->
+          <div class="sm:hidden">
+            <ProfileMenu session={data.session} />
+          </div>
         </div>
 
-        <div class="flex items-center gap-4">
+        <!-- Title & Search (Desktop: Title Left, Search Right) -->
+        <!-- This is getting tricky to match exact desktop layout with one structure.
+             Original Desktop: [Back, Title] ... [Search, Profile]
+             New Mobile: [Back, Profile] ... [Title] ... [Search]
+             
+             Let's try:
+             Container: flex flex-col sm:flex-row
+             
+             Item 1 (Back/MobileProfile): order-1
+             Item 2 (Title): order-3 sm:order-2 (Mobile: below, Desktop: Left next to back?)
+             Item 3 (Search/DesktopProfile): order-2 sm:order-3
+             
+             Actually, "Book Catalog" title was on the Left group.
+        -->
+
+        <h1
+          class="text-2xl font-bold text-stone-800 text-center sm:text-left sm:ml-4 sm:mr-auto"
+        >
+          Book Catalog
+        </h1>
+
+        <div
+          class="flex items-center gap-4 justify-center sm:justify-end w-full sm:w-auto"
+        >
           <!-- Search Bar -->
-          <div class="relative">
+          <div class="relative w-full sm:w-auto">
             <svg
               class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400"
               fill="none"
@@ -81,12 +115,14 @@
               type="text"
               placeholder="Search books..."
               bind:value={searchQuery}
-              class="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-300 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/20 focus:border-red-700 transition-all font-sans"
+              class="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/20 focus:border-red-700 transition-all font-sans"
             />
           </div>
 
-          <!-- Profile Menu -->
-          <ProfileMenu session={data.session} />
+          <!-- Desktop Profile -->
+          <div class="hidden sm:block">
+            <ProfileMenu session={data.session} />
+          </div>
         </div>
       </div>
     </div>

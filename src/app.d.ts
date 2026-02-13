@@ -10,4 +10,18 @@ declare global {
 	}
 }
 
+import "@auth/sveltekit";
+
+declare module "@auth/sveltekit" {
+  interface Session {
+    user?: {
+      id?: string;
+      name?: string | null;
+      email?: string | null;
+      image?: string | null;
+      language?: string;
+    };
+  }
+}
+
 export {};

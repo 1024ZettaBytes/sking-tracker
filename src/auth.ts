@@ -23,6 +23,7 @@ export const { handle } = SvelteKitAuth({
         await db.insert(users).values({
           email: user.email,
           provider: account.provider,
+          language: 'ENG',
           createdAt: new Date(),
           updatedAt: new Date(),
         });
@@ -45,6 +46,7 @@ export const { handle } = SvelteKitAuth({
 
         if (dbUser.length > 0) {
           session.user.id = String(dbUser[0].id);
+          session.user.language = dbUser[0].language;
         }
       }
       return session;

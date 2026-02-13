@@ -1,7 +1,12 @@
 <script lang="ts">
   import type { PageData } from "./$types";
   import ProfileMenu from "$lib/components/ProfileMenu.svelte";
+  import { translations, type Language } from "$lib/i18n";
+
   let { data }: { data: PageData } = $props();
+  let currentLang = $derived(
+    (data.session?.user?.language as Language) || "ENG",
+  );
 
   let currentQuoteIndex = $state(0);
   const quotes = [
@@ -54,7 +59,8 @@
       <a
         href="/catalog"
         class="text-stone-600 hover:text-stone-900 transition-colors text-xs sm:text-sm tracking-wider uppercase"
-        style="font-family: 'JetBrains Mono', monospace;">Catalog</a
+        style="font-family: 'JetBrains Mono', monospace;"
+        >{translations[currentLang].catalog}</a
       >
       <ProfileMenu session={data.session} />
     </div>
@@ -118,7 +124,7 @@
           class="text-red-700 tracking-[0.2em] sm:tracking-[0.3em] uppercase text-[10px] sm:text-xs mb-6 sm:mb-8"
           style="font-family: 'JetBrains Mono', monospace;"
         >
-          Book tracker For the Constant Readers
+          {translations[currentLang].heroSubtitle}
         </p>
 
         <!-- Main title - editorial style -->
@@ -202,7 +208,7 @@
             class="text-2xl sm:text-4xl md:text-5xl text-stone-800"
             style="font-family: 'JetBrains Mono', monospace;"
           >
-            From the Collection
+            {translations[currentLang].featuredBooks}
           </h2>
         </div>
         <a
@@ -210,7 +216,7 @@
           class="text-stone-500 hover:text-red-700 transition-colors text-xs sm:text-sm tracking-wider uppercase hidden sm:block"
           style="font-family: 'JetBrains Mono', monospace;"
         >
-          View All →
+          {translations[currentLang].viewAllBooks} →
         </a>
       </div>
 
