@@ -90,7 +90,7 @@
         <h1
           class="text-2xl font-bold text-stone-800 text-center sm:text-left sm:ml-4 sm:mr-auto"
         >
-          Book Catalog
+          {translations[currentLang].bookCatalog}
         </h1>
 
         <div
@@ -113,7 +113,7 @@
             </svg>
             <input
               type="text"
-              placeholder="Search books..."
+              placeholder={translations[currentLang].searchPlaceholder}
               bind:value={searchQuery}
               class="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/20 focus:border-red-700 transition-all font-sans"
             />
@@ -138,7 +138,7 @@
         <div class="flex items-center gap-2">
           <span class="text-stone-500">Total:</span>
           <span class="text-stone-800 font-semibold"
-            >{data.books.length} books</span
+            >{data.books.length}{" "} {translations[currentLang].books}</span
           >
         </div>
         {#if searchQuery}
@@ -253,7 +253,7 @@
           class="text-stone-500 text-xs text-center"
           style="font-family: 'JetBrains Mono', monospace;"
         >
-          Stephen King Book Tracker · {data.books.length} books catalogued
+          Stephen King Book Tracker · {data.books.length} {translations[currentLang].booksCatalogued}
         </p>
       </div>
     </div>

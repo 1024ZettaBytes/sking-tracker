@@ -18,6 +18,7 @@ export const translations = {
     bookCatalog: "Book Catalog",
     totalBooks: "Total: ",
     books: " books",
+    booksCatalogued: " books catalogued",
     
     // Collection Page
     totalBooksLabel: "TOTAL BOOKS",
@@ -48,6 +49,7 @@ export const translations = {
     bookCatalog: "Catálogo de Libros",
     totalBooks: "Total: ",
     books: " libros",
+    booksCatalogued: " libros catalogados",
     
     // Collection Page
     totalBooksLabel: "TOTAL LIBROS",

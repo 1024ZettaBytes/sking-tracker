@@ -39,6 +39,7 @@ const kingBooks = [
       "A writer returns to his hometown only to discover that the residents are being turned into vampires.",
     coverUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYVB_rHuOuYlrq5N1a7ZIg_rTo4YafAR0Ukg&s",
+    engCoverUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/%27Salem%27s_Lot_%281975%29_front_cover%2C_first_edition.jpg"
   },
   {
     title: "El Resplandor",
@@ -50,6 +51,7 @@ const kingBooks = [
       "Jack Torrance accepts a position as the off-season caretaker of the historic Overlook Hotel.",
     coverUrl:
       "https://m.media-amazon.com/images/I/51Xsea28OoL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Shining_%281977%29_front_cover%2C_first_edition.jpg"
   },
   {
     title: "Rabia",
@@ -271,7 +273,7 @@ const kingBooks = [
       "A man is cursed by a gypsy and begins to lose weight uncontrollably.",
     coverUrl: "https://pictures.abebooks.com/inventory/5000125378.jpg",
     engCoverUrl:
-      "https://preview.redd.it/just-reread-thinner-again-after-like-15-years-nothing-will-v0-fh2juu8bg5vd1.jpeg",
+      "https://upload.wikimedia.org/wikipedia/en/7/7a/Thinner_%28tephen_King_novel_-_cover_art%29.jpg",
   },
   {
     engTitle: "Skeleton Crew",
@@ -286,44 +288,64 @@ const kingBooks = [
       "https://upload.wikimedia.org/wikipedia/en/f/f3/SkeletonCrewHC.jpg",
     onlyEnglish: true,
   },
-{
-  title: 'La Niebla',
-  engTitle: 'N/A',
-  year: 1985,
-  synopsis: 'Una densa niebla cubre un pueblo, ocultando criaturas aterradoras que atacan a los residentes.',
-  engSynopsis: 'N/A',
-  coverUrl: 'https://m.media-amazon.com/images/I/81vWEXwrFyL.jpg',
-  onlySpanish: true,
-  type: 'short_story_collection',
-},
-{
-  title: 'La Expedición',
-  engTitle: 'N/A',
-  year: 1985,
-  synopsis: 'La expedición, que da título a este volumen de escalofriantes cuentos, advierte angustiosamente contra los riesgos de la curiosidad; la anciana de la Abuela quizá no sea la compañía adecuada para un niño cuando este queda aislado en una casa distante; el protagonista de Superviviente no tiene nada que comer, excepto... La locura está agazapada en la máquina de escribir del redactor de La balada del proyectil flexible...',
-  engSynopsis: 'N/A',
-  coverUrl: 'https://images.cdn2.buscalibre.com/fit-in/360x360/b5/5f/b55f4c061848280af889d9263fd4ae6f.jpg',
-  onlySpanish: true,
-  type: 'short_story_collection',
-},
-{
-  title: 'Historias Fantásticas',
-  engTitle: 'N/A',
-  year: 1985,
-  synopsis: 'Stephen King ha fundido aquí imágenes de terrores ancestrales con la iconografía de la actual sociedad norteamericana. Los relatos incluidos en este libro, originales y trepidantes, han cautivado a millones de lectores en todo el mundo.',
-  coverUrl: 'https://images.cdn2.buscalibre.com/fit-in/360x360/6c/f1/6cf1e177d3ae8aaabeea191beaae0681.jpg',
-  onlySpanish: true,
-  type: 'short_story_collection',
-},
-{
-  title: 'Dos Historias Para No Dormir',
-  engTitle: 'N/A',
-  synopsis: 'Un grupo de chicos y chicas sale a navegar en una balsa sobre un pacífico lago, donde una oscura mancha viscosa los acosa; en la cárcel, un interno tiene extrañas pesadillas en las que aparece una mujer que le atrae y repele a la vez, porque se convierte en una inmensa rata.',
-  year: 1985,
-  coverUrl: 'https://m.media-amazon.com/images/I/71Kqsbv0h4L._AC_UF1000,1000_QL80_.jpg',
-  onlySpanish: true,
-  type: 'short_story_collection',
-},
+  {
+    title: "La Niebla",
+    engTitle: "N/A",
+    year: 1985,
+    synopsis:
+      "Una densa niebla cubre un pueblo, ocultando criaturas aterradoras que atacan a los residentes.",
+    engSynopsis: "N/A",
+    coverUrl: "https://m.media-amazon.com/images/I/81vWEXwrFyL.jpg",
+    onlySpanish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "La Expedición",
+    engTitle: "N/A",
+    year: 1985,
+    synopsis:
+      "La expedición, que da título a este volumen de escalofriantes cuentos, advierte angustiosamente contra los riesgos de la curiosidad; la anciana de la Abuela quizá no sea la compañía adecuada para un niño cuando este queda aislado en una casa distante; el protagonista de Superviviente no tiene nada que comer, excepto... La locura está agazapada en la máquina de escribir del redactor de La balada del proyectil flexible...",
+    engSynopsis: "N/A",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/b5/5f/b55f4c061848280af889d9263fd4ae6f.jpg",
+    onlySpanish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "Historias Fantásticas",
+    engTitle: "N/A",
+    year: 1985,
+    synopsis:
+      "Stephen King ha fundido aquí imágenes de terrores ancestrales con la iconografía de la actual sociedad norteamericana. Los relatos incluidos en este libro, originales y trepidantes, han cautivado a millones de lectores en todo el mundo.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/6c/f1/6cf1e177d3ae8aaabeea191beaae0681.jpg",
+    onlySpanish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "Dos Historias Para No Dormir",
+    engTitle: "N/A",
+    synopsis:
+      "Un grupo de chicos y chicas sale a navegar en una balsa sobre un pacífico lago, donde una oscura mancha viscosa los acosa; en la cárcel, un interno tiene extrañas pesadillas en las que aparece una mujer que le atrae y repele a la vez, porque se convierte en una inmensa rata.",
+    year: 1985,
+    coverUrl:
+      "https://m.media-amazon.com/images/I/71Kqsbv0h4L._AC_UF1000,1000_QL80_.jpg",
+    onlySpanish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "N/A",
+    engTitle: "The Bachman Books",
+    year: 1985,
+    engSynopsis:
+      'A collection of four novels written under the pseudonym Richard Bachman, including: "Rage", "The Long Walk", "Roadwork", and "The Running Man". In addition to the essay: “Why I Was Bachman.”',
+    synopsis: "N/A",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/9/9b/Bachmanbooks.JPG",
+    onlyEnglish: true,
+    type: "novella_collection",
+  },
+
   {
     title: "Eso",
     engTitle: "It",
@@ -334,6 +356,34 @@ const kingBooks = [
       "The story follows the experiences of seven children as they are terrorized by an evil entity.",
     coverUrl:
       "https://upload.wikimedia.org/wikipedia/commons/1/1a/It_%281986%29_front_cover%2C_first_edition.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/It_%281986%29_front_cover%2C_first_edition.jpg",
+  },
+  {
+    title: "Los Ojos del Dragón",
+    engTitle: "The Eyes of the Dragon",
+    year: 1987,
+    synopsis:
+      "Una novela de fantasía que sigue la historia de un rey, su hijo inocente y su hermano malvado.",
+    engSynopsis:
+      "A fantasy novel that follows the story of a king, his innocent son, and his evil brother.",
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/cb/37/cb37cc62a4651952b8fbdd3a82cfab8d.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/0/0b/Eyesofthedragon.jpg",
+  },
+  {
+    title: "La Torre Oscura II: La Llegada de los Tres",
+    engTitle: "The Dark Tower: The Drawing of the Three",
+    year: 1987,
+    synopsis:
+      "El segundo libro de la serie La Torre Oscura, que sigue al pistolero Roland mientras recluta a tres compañeros de un mundo paralelo.",
+    engSynopsis:
+      "The second book in the Dark Tower series, which follows the gunslinger Roland as he recruits three companions from a parallel world.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/71oAZbfN6WL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71KQ324N9vL._AC_UF1000,1000_QL80_.jpg",
   },
   {
     title: "Misery",
@@ -345,7 +395,170 @@ const kingBooks = [
       'Paul Sheldon is a famous writer who is rescued from a car crash by his "number one fan".',
     coverUrl:
       "https://upload.wikimedia.org/wikipedia/commons/1/14/Misery_%281987%29_front_cover%2C_first_edition.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/1/14/Misery_%281987%29_front_cover%2C_first_edition.jpg",
   },
+  {
+    title: "Los Tommyknockers",
+    engTitle: "The Tommyknockers",
+    year: 1987,
+    synopsis:
+      "Un pueblo pequeño es afectado por la influencia de una nave espacial enterrada que emite una radiación extraña.",
+    engSynopsis:
+      "A small town is affected by the influence of a buried spaceship that emits strange radiation.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/40/f1/40f1a0b1b30c77596cc7765b8c3072ea.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/5/55/Tommyknockers.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "Nightmares In The Sky",
+    year: 1988,
+    synopsis: "N/A",
+    engSynopsis: "This is a coffee table book about gargoyles and Gothic architecture. It features images by F-Stop Fitzgerald and text by King.",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81cIszvEW5L.jpg",
+      type: "non_fiction",
+    onlyEnglish: true,
+  },
+  {
+    title: "La Mitad Oscura",
+    engTitle: "The Dark Half",
+    year: 1989,
+    synopsis:
+      "Thad Beaumont es un escritor que tiene un pseudónimo malvado llamado George Stark.",
+    engSynopsis:
+      "Thad Beaumont is a writer who has an evil pseudonym named George Stark.",
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/10/1f/101f8475d1aaeb0198be73ef2d5f7033.jpg",
+    engCoverUrl:
+      "https://www.stephenking.com.ar/wp-content/uploads/2017/02/The-Dark-Half-Viking.jpg",
+  },
+  {
+    title: "Las Cuatro Después de Medianoche",
+    engTitle: "Four Past Midnight",
+    year: 1990,
+    synopsis: 'Colección de cuatro novelas cortas : "Los Langoliers", "Ventana secreta, jardín secreto", "El policía de la biblioteca" y "El perro de la Polaroid".',
+    engSynopsis: 'Collection of four novellas: "The Langoliers", "Secret Window, Secret Garden", "The Library Policeman", and "The Sun Dog".',
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/e5/4f/e54ff731fc5e949ff29f01bd9a44829c.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81grr+SU0bL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_novella_collection",
+  },
+{
+    title: "La Torre Oscura III: Las Tierras Baldías",
+    engTitle: "The Dark Tower: The Waste Lands",
+    year: 1991,
+    synopsis:
+      "El tercer libro de la serie La Torre Oscura, que sigue al pistolero Roland mientras atraviesa las Tierras Baldías en su búsqueda de la Torre Oscura.",
+    engSynopsis:
+      "The third book in the Dark Tower series, which follows the gunslinger Roland as he traverses the Waste Lands in his quest for the Dark Tower.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81wSuNgSHqL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81kcyaNSbdL._AC_UF1000,1000_QL80_.jpg",
+},
+{
+  title: "La Tienda",
+engTitle: "Needful Things",
+year: 1991,
+synopsis:
+  "En un pequeño pueblo, una nueva tienda llamada 'Needful Things' abre y ofrece a los residentes objetos que cumplen sus deseos más profundos, pero a un precio terrible.",
+engSynopsis:
+  "In a small town, a new store called 'Needful Things' opens and offers residents items that fulfill their deepest desires, but at a terrible price.",
+coverUrl:
+  "https://m.media-amazon.com/images/I/81oNYlOWokL._AC_UF1000,1000_QL80_.jpg",
+engCoverUrl:
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvW9seyEQPo-KyUKz5wEhnxn-dNVKUsQdtQ&s",
+},
+{
+  title: "El Juego de Gerald",
+  engTitle: "Gerald's Game",
+  year: 1992,
+  synopsis:
+    "Una mujer queda esposada a una cama en una cabaña remota después de que un juego sexual con su esposo sale mal.",
+  engSynopsis:
+    "A woman is handcuffed to a bed in a remote cabin after a sexual game with her husband goes wrong.",
+  coverUrl:
+    "https://m.media-amazon.com/images/I/71b4q30PiRL.jpg",
+  engCoverUrl:
+    "https://m.media-amazon.com/images/I/71T4sMstcHL._AC_UF1000,1000_QL80_.jpg",
+},
+{
+  title: "Dolores Claiborne",
+  engTitle: "Dolores Claiborne",
+  year: 1992,
+  synopsis:
+    "Dolores Claiborne es una mujer acusada de asesinar a su empleadora, pero la historia se cuenta a través de sus confesiones y recuerdos.",
+  engSynopsis:
+    "Dolores Claiborne is a woman accused of murdering her employer, but the story is told through her confessions and memories.",
+  coverUrl:
+    "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
+  engCoverUrl:
+    "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
+},
+{
+  title: "N/A",
+  engTitle: "Nightmares & Dreamscapes",
+  year: 1993,
+  synopsis:
+    "N/A",
+  engSynopsis:
+    "Short story anthology (3rd) - This book is a collection of 24 short stories by King.",
+  engCoverUrl:
+    "https://www.stephenking.com.ar/wp-content/uploads/2017/02/Nightamres-Dreamscapes-Viking.jpg",
+  type: "short_story_collection",
+  onlyEnglish: true,
+},
+{
+  title: "Pesadillas y Alucinaciones I",
+  engTitle: "N/A",
+  year: 1993,
+  synopsis:
+    "Parte 1 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
+  coverUrl:
+    "https://m.media-amazon.com/images/I/71TWOI3lHIL._AC_UF1000,1000_QL80_.jpg",
+  type: "short_story_collection",
+  onlySpanish: true,
+},
+{
+  title: "Pesadillas y Alucinaciones II",
+  engTitle: "N/A",
+  year: 1993,
+  synopsis:
+    "Parte 2 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
+  coverUrl:
+    "https://m.media-amazon.com/images/I/5195H7G89HL._AC_UF1000,1000_QL80_.jpg",
+  type: "short_story_collection",
+  onlySpanish: true,
+}
+,{
+  title: "Insomia",
+  engTitle: "Insomnia",
+  year: 1994,
+  synopsis:
+    "Ralph Roberts comienza a sufrir de insomnio severo que le permite ver auras y presagios de muerte.",
+  engSynopsis:
+    "Ralph Roberts begins to suffer from severe insomnia that allows him to see auras and premonitions of death.",
+  coverUrl:
+    "https://imagessl2.casadellibro.com/a/l/s5/22/9788497597722.webp",
+  engCoverUrl:
+    "https://m.media-amazon.com/images/I/71Nspx4pOfL._UF1000,1000_QL80_.jpg",
+},
+{
+  title: "El Retrato de Rose Madder",
+  engTitle: "Rose Madder",
+  year: 1995,
+  synopsis:
+    "Rose Madder es una mujer que escapa de su abusivo esposo y encuentra un cuadro que la transporta a un mundo alternativo.",
+  engSynopsis: "Rose Madder is a woman who escapes her abusive husband and finds a painting that transports her to an alternate world.",
+  coverUrl:
+    "https://m.media-amazon.com/images/I/5107ER1KQXL._AC_UF1000,1000_QL80_.jpg",
+  engCoverUrl:
+    "https://m.media-amazon.com/images/I/51Y+l+++hzL._AC_UF1000,1000_QL80_.jpg",
+},
   {
     title: "La Milla Verde",
     engTitle: "The Green Mile",
@@ -356,6 +569,125 @@ const kingBooks = [
       "The story of a death row supervisor's encounter with an unusual inmate.",
     coverUrl:
       "https://m.media-amazon.com/images/I/71leuaId3-L._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/8171jSR50VL.jpg",
+  },
+  {
+    title: "Desesperación",
+    engTitle: "Desperation",
+    year: 1996,
+    synopsis:
+      "Un grupo de personas es secuestrado por un hombre poseído por un espíritu maligno en un pueblo desierto de Nevada.",
+    engSynopsis:
+      "A group of people is kidnapped by a man possessed by an evil spirit in a deserted town in Nevada.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/915qOa3PMWS._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91Xdkod41aL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Posesión",
+    engTitle: "The Regulators",
+    year: 1996,
+    synopsis:
+      "En un vecindario suburbano, una fuerza maligna toma el control de las casas y aterroriza a los residentes.",
+    engSynopsis:
+      "In a suburban neighborhood, an evil force takes control of the houses and terrorizes the residents.",
+    coverUrl:
+      "https://image.cdn1.buscalibre.com/60e395658463b5f3158bbb69.RS500x500.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/4/42/TheRegulators.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "Six Stories",
+    year: 1997,
+    synopsis:
+      "N/A",
+    engSynopsis:
+      "Six Stories is a collection of six short stories by Stephen King, published in 1997. The stories included are: 'Lunch at the Gotham Café', 'L. T.'s Theory of Pets', 'Luckey Quarter', 'Autopsy Room Four', 'Blind Willie' and 'The Man In The Black Suit'.",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Six_Stories.jpg/250px-Six_Stories.jpg",
+    onlyEnglish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "La Torre Oscura IV: Mago y Cristal",
+    engTitle: "The Dark Tower: Wizard and Glass",
+    year: 1997,
+    synopsis:
+      "El cuarto libro de la serie La Torre Oscura, que sigue al pistolero Roland mientras narra su juventud y su primer amor.",
+    engSynopsis:
+      "The fourth book in the Dark Tower series, which follows the gunslinger Roland as he narrates his youth and first love.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/813NK78iHPL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81eZ7xI608L.jpg",
+  },
+  {
+    title: "Un Saco de Huesos",
+    engTitle: "Bag of Bones",
+    year: 1998,
+    synopsis:
+      "Un escritor viudo se muda a una casa junto al lago y descubre secretos oscuros relacionados con su esposa fallecida.",
+    engSynopsis:
+      "A widowed writer moves to a lakeside house and discovers dark secrets related to his deceased wife.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/74/46/744627321c5cca488dab5e6844ce2003.jpg",
+    engCoverUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB6ivR58xPXy0LibxbGdqY8CHJV0fRwki0Bg&s",
+  },
+  {
+    title: "La Tormenta del Siglo",
+    engTitle: "Storm of the Century",
+    year: 1999,
+    synopsis:
+      "En una pequeña isla de Maine, un misterioso hombre llamado André Linoge llega durante una tormenta y comienza a aterrorizar a los residentes.",
+    engSynopsis:
+      "In a small island in Maine, a mysterious man named André Linoge arrives during a storm and begins to terrorize the residents.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/41LoWPOkRIL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/813JJzTLEeL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "La Chica que Amaba a Tom Gordon",
+    engTitle: "The Girl Who Loved Tom Gordon",
+    year: 1999,
+    synopsis:
+      "Una niña de nueve años se pierde en el bosque y encuentra consuelo imaginando que el jugador de béisbol Tom Gordon la protege.",
+    engSynopsis:
+      "A nine year old girl gets lost in the woods and finds comfort imagining that baseball player Tom Gordon is protecting her.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/910klMRhkSL.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/e/e2/Girl_Gordon_cover.jpg",
+  },
+  {
+    title: "Corazones En La Atlántida",
+    engTitle: "Hearts in Atlantis",
+    year: 1999,
+    synopsis:
+      "3.ª Colección de cuatro novelas y un relato corto, relacionadas todas entre sí y con la guerra de Vietnam de trasfondo.",
+    engSynopsis: "3rd Collection of four novels and a short story, all related to each other and with the Vietnam War as a backdrop.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81VyzBmti6L._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/7/70/HeartsInAtlantis.gif",
+  },
+  {
+    title: "Mientras Escribo",
+    engTitle: "On Writing: A Memoir of the Craft",
+    year: 2000,
+    synopsis:
+      "Una memoria que combina la autobiografía de Stephen King con consejos sobre el arte de escribir.",
+    engSynopsis:
+      "A memoir that combines Stephen King's autobiography with advice on the craft of writing.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/c0/e2/c0e255390b610c4bf37753c6fe9d2f9b.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71z4varBITL._AC_UF1000,1000_QL80_.jpg",
+    type: "non_fiction",
   },
   {
     title: "11/22/63",
