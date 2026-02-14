@@ -51,11 +51,11 @@ export const translations = {
     
     // Collection Page
     totalBooksLabel: "TOTAL LIBROS",
-    ownedLabel: "TENIDO",
+    ownedLabel: "YA LO TENGO!",
     readLabel: "LEÍDO",
     
     // Book Card Actions
-    markOwned: "TENIDO",
+    markOwned: "YA LO TENGO!",
     markRead: "LEÍDO",
     rate: "CALIFICAR",
   }
