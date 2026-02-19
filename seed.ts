@@ -39,7 +39,8 @@ const kingBooks = [
       "A writer returns to his hometown only to discover that the residents are being turned into vampires.",
     coverUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYVB_rHuOuYlrq5N1a7ZIg_rTo4YafAR0Ukg&s",
-    engCoverUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/%27Salem%27s_Lot_%281975%29_front_cover%2C_first_edition.jpg"
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/%27Salem%27s_Lot_%281975%29_front_cover%2C_first_edition.jpg",
   },
   {
     title: "El Resplandor",
@@ -51,7 +52,8 @@ const kingBooks = [
       "Jack Torrance accepts a position as the off-season caretaker of the historic Overlook Hotel.",
     coverUrl:
       "https://m.media-amazon.com/images/I/51Xsea28OoL._AC_UF1000,1000_QL80_.jpg",
-    engCoverUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Shining_%281977%29_front_cover%2C_first_edition.jpg"
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/The_Shining_%281977%29_front_cover%2C_first_edition.jpg",
   },
   {
     title: "Rabia",
@@ -416,10 +418,10 @@ const kingBooks = [
     engTitle: "Nightmares In The Sky",
     year: 1988,
     synopsis: "N/A",
-    engSynopsis: "This is a coffee table book about gargoyles and Gothic architecture. It features images by F-Stop Fitzgerald and text by King.",
-    engCoverUrl:
-      "https://m.media-amazon.com/images/I/81cIszvEW5L.jpg",
-      type: "non_fiction",
+    engSynopsis:
+      "This is a coffee table book about gargoyles and Gothic architecture. It features images by F-Stop Fitzgerald and text by King.",
+    engCoverUrl: "https://m.media-amazon.com/images/I/81cIszvEW5L.jpg",
+    type: "non_fiction",
     onlyEnglish: true,
   },
   {
@@ -439,15 +441,17 @@ const kingBooks = [
     title: "Las Cuatro Después de Medianoche",
     engTitle: "Four Past Midnight",
     year: 1990,
-    synopsis: 'Colección de cuatro novelas cortas : "Los Langoliers", "Ventana secreta, jardín secreto", "El policía de la biblioteca" y "El perro de la Polaroid".',
-    engSynopsis: 'Collection of four novellas: "The Langoliers", "Secret Window, Secret Garden", "The Library Policeman", and "The Sun Dog".',
+    synopsis:
+      'Colección de cuatro novelas cortas : "Los Langoliers", "Ventana secreta, jardín secreto", "El policía de la biblioteca" y "El perro de la Polaroid".',
+    engSynopsis:
+      'Collection of four novellas: "The Langoliers", "Secret Window, Secret Garden", "The Library Policeman", and "The Sun Dog".',
     coverUrl:
       "https://images.cdn3.buscalibre.com/fit-in/360x360/e5/4f/e54ff731fc5e949ff29f01bd9a44829c.jpg",
     engCoverUrl:
       "https://m.media-amazon.com/images/I/81grr+SU0bL._AC_UF1000,1000_QL80_.jpg",
     type: "short_novella_collection",
   },
-{
+  {
     title: "La Torre Oscura III: Las Tierras Baldías",
     engTitle: "The Dark Tower: The Waste Lands",
     year: 1991,
@@ -459,106 +463,104 @@ const kingBooks = [
       "https://m.media-amazon.com/images/I/81wSuNgSHqL._AC_UF1000,1000_QL80_.jpg",
     engCoverUrl:
       "https://m.media-amazon.com/images/I/81kcyaNSbdL._AC_UF1000,1000_QL80_.jpg",
-},
-{
-  title: "La Tienda",
-engTitle: "Needful Things",
-year: 1991,
-synopsis:
-  "En un pequeño pueblo, una nueva tienda llamada 'Needful Things' abre y ofrece a los residentes objetos que cumplen sus deseos más profundos, pero a un precio terrible.",
-engSynopsis:
-  "In a small town, a new store called 'Needful Things' opens and offers residents items that fulfill their deepest desires, but at a terrible price.",
-coverUrl:
-  "https://m.media-amazon.com/images/I/81oNYlOWokL._AC_UF1000,1000_QL80_.jpg",
-engCoverUrl:
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvW9seyEQPo-KyUKz5wEhnxn-dNVKUsQdtQ&s",
-},
-{
-  title: "El Juego de Gerald",
-  engTitle: "Gerald's Game",
-  year: 1992,
-  synopsis:
-    "Una mujer queda esposada a una cama en una cabaña remota después de que un juego sexual con su esposo sale mal.",
-  engSynopsis:
-    "A woman is handcuffed to a bed in a remote cabin after a sexual game with her husband goes wrong.",
-  coverUrl:
-    "https://m.media-amazon.com/images/I/71b4q30PiRL.jpg",
-  engCoverUrl:
-    "https://m.media-amazon.com/images/I/71T4sMstcHL._AC_UF1000,1000_QL80_.jpg",
-},
-{
-  title: "Dolores Claiborne",
-  engTitle: "Dolores Claiborne",
-  year: 1992,
-  synopsis:
-    "Dolores Claiborne es una mujer acusada de asesinar a su empleadora, pero la historia se cuenta a través de sus confesiones y recuerdos.",
-  engSynopsis:
-    "Dolores Claiborne is a woman accused of murdering her employer, but the story is told through her confessions and memories.",
-  coverUrl:
-    "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
-  engCoverUrl:
-    "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
-},
-{
-  title: "N/A",
-  engTitle: "Nightmares & Dreamscapes",
-  year: 1993,
-  synopsis:
-    "N/A",
-  engSynopsis:
-    "Short story anthology (3rd) - This book is a collection of 24 short stories by King.",
-  engCoverUrl:
-    "https://www.stephenking.com.ar/wp-content/uploads/2017/02/Nightamres-Dreamscapes-Viking.jpg",
-  type: "short_story_collection",
-  onlyEnglish: true,
-},
-{
-  title: "Pesadillas y Alucinaciones I",
-  engTitle: "N/A",
-  year: 1993,
-  synopsis:
-    "Parte 1 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
-  coverUrl:
-    "https://m.media-amazon.com/images/I/71TWOI3lHIL._AC_UF1000,1000_QL80_.jpg",
-  type: "short_story_collection",
-  onlySpanish: true,
-},
-{
-  title: "Pesadillas y Alucinaciones II",
-  engTitle: "N/A",
-  year: 1993,
-  synopsis:
-    "Parte 2 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
-  coverUrl:
-    "https://m.media-amazon.com/images/I/5195H7G89HL._AC_UF1000,1000_QL80_.jpg",
-  type: "short_story_collection",
-  onlySpanish: true,
-}
-,{
-  title: "Insomia",
-  engTitle: "Insomnia",
-  year: 1994,
-  synopsis:
-    "Ralph Roberts comienza a sufrir de insomnio severo que le permite ver auras y presagios de muerte.",
-  engSynopsis:
-    "Ralph Roberts begins to suffer from severe insomnia that allows him to see auras and premonitions of death.",
-  coverUrl:
-    "https://imagessl2.casadellibro.com/a/l/s5/22/9788497597722.webp",
-  engCoverUrl:
-    "https://m.media-amazon.com/images/I/71Nspx4pOfL._UF1000,1000_QL80_.jpg",
-},
-{
-  title: "El Retrato de Rose Madder",
-  engTitle: "Rose Madder",
-  year: 1995,
-  synopsis:
-    "Rose Madder es una mujer que escapa de su abusivo esposo y encuentra un cuadro que la transporta a un mundo alternativo.",
-  engSynopsis: "Rose Madder is a woman who escapes her abusive husband and finds a painting that transports her to an alternate world.",
-  coverUrl:
-    "https://m.media-amazon.com/images/I/5107ER1KQXL._AC_UF1000,1000_QL80_.jpg",
-  engCoverUrl:
-    "https://m.media-amazon.com/images/I/51Y+l+++hzL._AC_UF1000,1000_QL80_.jpg",
-},
+  },
+  {
+    title: "La Tienda",
+    engTitle: "Needful Things",
+    year: 1991,
+    synopsis:
+      "En un pequeño pueblo, una nueva tienda llamada 'Needful Things' abre y ofrece a los residentes objetos que cumplen sus deseos más profundos, pero a un precio terrible.",
+    engSynopsis:
+      "In a small town, a new store called 'Needful Things' opens and offers residents items that fulfill their deepest desires, but at a terrible price.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81oNYlOWokL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvW9seyEQPo-KyUKz5wEhnxn-dNVKUsQdtQ&s",
+  },
+  {
+    title: "El Juego de Gerald",
+    engTitle: "Gerald's Game",
+    year: 1992,
+    synopsis:
+      "Una mujer queda esposada a una cama en una cabaña remota después de que un juego sexual con su esposo sale mal.",
+    engSynopsis:
+      "A woman is handcuffed to a bed in a remote cabin after a sexual game with her husband goes wrong.",
+    coverUrl: "https://m.media-amazon.com/images/I/71b4q30PiRL.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71T4sMstcHL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Dolores Claiborne",
+    engTitle: "Dolores Claiborne",
+    year: 1992,
+    synopsis:
+      "Dolores Claiborne es una mujer acusada de asesinar a su empleadora, pero la historia se cuenta a través de sus confesiones y recuerdos.",
+    engSynopsis:
+      "Dolores Claiborne is a woman accused of murdering her employer, but the story is told through her confessions and memories.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/810FXfnUDmL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "Nightmares & Dreamscapes",
+    year: 1993,
+    synopsis: "N/A",
+    engSynopsis:
+      "Short story anthology (3rd) - This book is a collection of 24 short stories by King.",
+    engCoverUrl:
+      "https://www.stephenking.com.ar/wp-content/uploads/2017/02/Nightamres-Dreamscapes-Viking.jpg",
+    type: "short_story_collection",
+    onlyEnglish: true,
+  },
+  {
+    title: "Pesadillas y Alucinaciones I",
+    engTitle: "N/A",
+    year: 1993,
+    synopsis:
+      "Parte 1 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/71TWOI3lHIL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_story_collection",
+    onlySpanish: true,
+  },
+  {
+    title: "Pesadillas y Alucinaciones II",
+    engTitle: "N/A",
+    year: 1993,
+    synopsis:
+      "Parte 2 de  na antología de cuentos (3.ª) - Este libro es una colección de 24 relatos cortos de King.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/5195H7G89HL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_story_collection",
+    onlySpanish: true,
+  },
+  {
+    title: "Insomia",
+    engTitle: "Insomnia",
+    year: 1994,
+    synopsis:
+      "Ralph Roberts comienza a sufrir de insomnio severo que le permite ver auras y presagios de muerte.",
+    engSynopsis:
+      "Ralph Roberts begins to suffer from severe insomnia that allows him to see auras and premonitions of death.",
+    coverUrl: "https://imagessl2.casadellibro.com/a/l/s5/22/9788497597722.webp",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71Nspx4pOfL._UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "El Retrato de Rose Madder",
+    engTitle: "Rose Madder",
+    year: 1995,
+    synopsis:
+      "Rose Madder es una mujer que escapa de su abusivo esposo y encuentra un cuadro que la transporta a un mundo alternativo.",
+    engSynopsis:
+      "Rose Madder is a woman who escapes her abusive husband and finds a painting that transports her to an alternate world.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/5107ER1KQXL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/51Y+l+++hzL._AC_UF1000,1000_QL80_.jpg",
+  },
   {
     title: "La Milla Verde",
     engTitle: "The Green Mile",
@@ -569,8 +571,7 @@ engCoverUrl:
       "The story of a death row supervisor's encounter with an unusual inmate.",
     coverUrl:
       "https://m.media-amazon.com/images/I/71leuaId3-L._AC_UF1000,1000_QL80_.jpg",
-    engCoverUrl:
-      "https://m.media-amazon.com/images/I/8171jSR50VL.jpg",
+    engCoverUrl: "https://m.media-amazon.com/images/I/8171jSR50VL.jpg",
   },
   {
     title: "Desesperación",
@@ -602,8 +603,7 @@ engCoverUrl:
     title: "N/A",
     engTitle: "Six Stories",
     year: 1997,
-    synopsis:
-      "N/A",
+    synopsis: "N/A",
     engSynopsis:
       "Six Stories is a collection of six short stories by Stephen King, published in 1997. The stories included are: 'Lunch at the Gotham Café', 'L. T.'s Theory of Pets', 'Luckey Quarter', 'Autopsy Room Four', 'Blind Willie' and 'The Man In The Black Suit'.",
     engCoverUrl:
@@ -621,8 +621,7 @@ engCoverUrl:
       "The fourth book in the Dark Tower series, which follows the gunslinger Roland as he narrates his youth and first love.",
     coverUrl:
       "https://m.media-amazon.com/images/I/813NK78iHPL._UF1000,1000_QL80_.jpg",
-    engCoverUrl:
-      "https://m.media-amazon.com/images/I/81eZ7xI608L.jpg",
+    engCoverUrl: "https://m.media-amazon.com/images/I/81eZ7xI608L.jpg",
   },
   {
     title: "Un Saco de Huesos",
@@ -658,8 +657,7 @@ engCoverUrl:
       "Una niña de nueve años se pierde en el bosque y encuentra consuelo imaginando que el jugador de béisbol Tom Gordon la protege.",
     engSynopsis:
       "A nine year old girl gets lost in the woods and finds comfort imagining that baseball player Tom Gordon is protecting her.",
-    coverUrl:
-      "https://m.media-amazon.com/images/I/910klMRhkSL.jpg",
+    coverUrl: "https://m.media-amazon.com/images/I/910klMRhkSL.jpg",
     engCoverUrl:
       "https://upload.wikimedia.org/wikipedia/en/e/e2/Girl_Gordon_cover.jpg",
   },
@@ -669,13 +667,14 @@ engCoverUrl:
     year: 1999,
     synopsis:
       "3.ª Colección de cuatro novelas y un relato corto, relacionadas todas entre sí y con la guerra de Vietnam de trasfondo.",
-    engSynopsis: "3rd Collection of four novels and a short story, all related to each other and with the Vietnam War as a backdrop.",
+    engSynopsis:
+      "3rd Collection of four novels and a short story, all related to each other and with the Vietnam War as a backdrop.",
     coverUrl:
       "https://m.media-amazon.com/images/I/81VyzBmti6L._UF1000,1000_QL80_.jpg",
     engCoverUrl:
       "https://upload.wikimedia.org/wikipedia/en/7/70/HeartsInAtlantis.gif",
   },
-  {
+    {
     title: "Mientras Escribo",
     engTitle: "On Writing: A Memoir of the Craft",
     year: 2000,
@@ -690,7 +689,276 @@ engCoverUrl:
     type: "non_fiction",
   },
   {
-    title: "11/22/63",
+    title: "N/A",
+    engTitle: "Secret Windows: Essays and Fiction on the Craft of Writing",
+    year: 2000,
+    synopsis: "N/A",
+    engSynopsis:
+      "An anthology of short stories, essays, hard-to-find pieces, little-known interviews, and articles about writing.",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/516pfh-6CDL._AC_UF1000,1000_QL80_.jpg",
+    onlyEnglish: true,
+  },
+  {
+    title: "El Cazador de Sueños",
+    engTitle: "Dreamcatcher",
+    year: 2001,
+    synopsis:
+      "Cuatro amigos de la infancia se reúnen para una excursión de caza, pero se encuentran con una amenaza alienígena.",
+    engSynopsis:
+      "Four childhood friends reunite for a hunting trip, but encounter an alien threat.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/816yqeqIzBL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91LsacARWEL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Casa Negra",
+    engTitle: "Black House",
+    year: 2001,
+    synopsis:
+      "Un detective retirado se une a un joven con habilidades psíquicas para investigar una serie de asesinatos en un pueblo pequeño.",
+    engSynopsis:
+      "A retired detective teams up with a young man with psychic abilities to investigate a series of murders in a small town.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/913k37+mYZL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/c9/c6/c9c6aee63c9fd00ac5f2b38c89d27bb1.jpg",
+  },
+  {
+    title: "Todo es Eventual",
+    engTitle: "Everything's Eventual",
+    year: 2002,
+    synopsis: "Colección de 14 selectos relatos cortos de King.",
+    engSynopsis: "Collection of 14 select short stories by King.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/34/8c/348cf7aee8a5250a0d97e5dc8141c0ab.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71yVPXYbo5L._UF1000,1000_QL80_.jpg",
+    type: "short_story_collection",
+  },
+  {
+    title: "Buick 8: Un Coche Perverso",
+    engTitle: "From a Buick 8",
+    year: 2002,
+    synopsis:
+      "Un grupo de policías investiga un misterioso automóvil que parece tener propiedades sobrenaturales.",
+    engSynopsis:
+      "A group of police officers investigates a mysterious car that seems to have supernatural properties.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/92/10/92100750db1b1f20e44fc60ecfd007bd.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81-xHuJaw0L._UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "La Torre Oscura V: Lobos del Calla",
+    engTitle: "The Dark Tower: Wolves of the Calla",
+    year: 2003,
+    synopsis:
+      "El quinto libro de la serie La Torre Oscura, que sigue al pistolero Roland mientras llega a un pueblo llamado Calla Bryn Sturgis y se enfrenta a una amenaza conocida como los Lobos del Calla.",
+    engSynopsis:
+      "The fifth book in the Dark Tower series, which follows the gunslinger Roland as he arrives at a town called Calla Bryn Sturgis and faces a threat known as the Wolves of the Calla.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/2f/bb/2fbb02cb0469a59173d695ed1e335476.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71dOKrO5DGL.jpg"
+  },
+  {
+    title: "La Torre Oscura VI: Canción de Susannah",
+    engTitle: "The Dark Tower: Song of Susannah",
+    year: 2004,
+    synopsis:
+      "El sexto libro de la serie La Torre Oscura, que sigue al pistolero Roland mientras su grupo se enfrenta a una amenaza que pone en peligro a uno de sus miembros, Susannah.",
+    engSynopsis:
+      "The sixth book in the Dark Tower series, which follows the gunslinger Roland as his group faces a threat that endangers one of its members, Susannah.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91ekIuKVwTL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71ZDE1KvEtL._AC_UF350,350_QL50_.jpg"
+  },
+  {
+    title: "La Torre Oscura VII: La Torre Oscura",
+    engTitle: "The Dark Tower: The Dark Tower",
+    year: 2004,
+    synopsis:
+      "El séptimo y último libro de la serie La Torre Oscura, que concluye la historia del pistolero Roland y su búsqueda de la Torre Oscura.",
+    engSynopsis:
+      "The seventh and final book in the Dark Tower series, which concludes the story of the gunslinger Roland and his quest for the Dark Tower.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81VVLpIUYPL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71rxkomEqdL.jpg"
+  },
+  {
+    title: "N/A",
+    engTitle: "Faithful",
+    year: 2004,
+    synopsis: "N/A",
+    engSynopsis:
+      "A memoir about the 2004 Boston Red Sox season, co-written with Stewart O'Nan.",
+    engCoverUrl:
+      "https://www.stephenking.com.ar/wp-content/uploads/2017/03/Faithful-Scribner.jpg",
+    onlyEnglish: true,
+    type: "non_fiction",
+  },
+  {
+    title: "Colorado Kid",
+    engTitle: "The Colorado Kid",
+    year: 2005,
+    synopsis:
+      "Dos periodistas investigan un misterio sin resolver sobre la muerte de un hombre en una isla de Maine.",
+    engSynopsis:
+      "Two journalists investigate an unsolved mystery about the death of a man on an island in Maine.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/5f/55/5f5563e10c3dbdabf4c49574881d9382.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91rlLRr1+IL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Cell",
+    engTitle: "Cell",
+    year: 2006,
+    synopsis:
+      "Un pulso electromagnético convierte a las personas en criaturas violentas, y un hombre intenta sobrevivir y encontrar a su hijo.",
+    engSynopsis:
+      "An electromagnetic pulse turns people into violent creatures, and a man tries to survive and find his son.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/71/07/7107bef0af8238ce8131b03dbdb1120d.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/510MJTAGTQL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "La Historia de Lisey",
+    engTitle: "Lisey's Story",
+    year: 2006,
+    synopsis:
+      "Lisey Landon, la viuda de un famoso escritor, se enfrenta a recuerdos dolorosos y a un mundo paralelo mientras lidia con la muerte de su esposo.",
+    engSynopsis:
+      "Lisey Landon, the widow of a famous writer, confronts painful memories and a parallel world as she deals with her husband's death.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/88/0f/880ff30dd3f5df64e379a3d17dfa57d4.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/51H19+Hv-3L._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "The Secretary of Dreams: Volume 1",
+    year: 2006,
+    synopsis: "N/A",
+    engSynopsis:
+      "A collection of illustrated versions of Stephen King's short stories, with artwork by Glenn Chadbourne.",
+    engCoverUrl:
+      "https://i.pinimg.com/736x/ed/fc/2c/edfc2c9fa16feacf226e54035f1f548a.jpg",
+    onlyEnglish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "Blaze",
+    engTitle: "Blaze",
+    year: 2007,
+    synopsis:
+      "Una novela sobre un criminal llamado Blaze.",
+    engSynopsis:
+      "A novel about a criminal named Blaze.",
+    coverUrl:
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/84/41/8441a4ce2c8e071a43e0f916b9d070ad.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/2/26/Blazecat.jpg",
+  },
+  {
+    title: "Duma Key",
+    engTitle: "Duma Key",
+    year: 2008,
+    synopsis:
+      "Un hombre se muda a una isla de Florida después de un accidente que lo deja con una mano inutilizada, y descubre que tiene habilidades psíquicas relacionadas con la pintura.",
+    engSynopsis:
+      "A man moves to a Florida island after an accident that leaves him with a useless hand, and discovers he has psychic abilities related to painting.",
+    coverUrl:
+      "https://imagessl9.casadellibro.com/a/l/s5/09/9788401337109.webp",
+    engCoverUrl:
+      "https://imagessl9.casadellibro.com/a/l/s5/09/9788401337109.webp",
+  },
+  {
+    title: "Después del Anochecer",
+    engTitle: "Just After Sunset",
+    year: 2008,
+    synopsis:
+      "Una colección de 13 relatos cortos que exploran temas de terror, suspense y lo sobrenatural.",
+    engSynopsis:
+      "A collection of 13 short stories that explore themes of horror, suspense, and the supernatural.",
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/ee/3d/ee3d66f0c544dc6dc1a149b906d9ced4.jpg",
+    engCoverUrl:
+      "https://www.stephenking.com.ar/wp-content/uploads/2017/03/Just-After-Sunset-Scribner.jpg",
+    type: "short_story_collection",
+  },
+  {
+    title: "N/A",
+    engTitle: "Srtephen King Goes to the Movies",
+    year: 2009,
+    synopsis: "N/A",
+    engSynopsis:
+      "A collection of essays by Stephen King about his experiences with film adaptations of his work.",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/610PRiEM6uL._AC_UF1000,1000_QL80_.jpg",
+    onlyEnglish: true,
+    type: "non_fiction",
+  },
+  {
+    title: "La Cúpula",
+    engTitle: "Under the Dome",
+    year: 2009,
+    synopsis:
+      "Un pueblo pequeño queda atrapado bajo una cúpula invisible e impenetrable, y los residentes deben luchar por sobrevivir mientras enfrentan conflictos internos y amenazas externas.",
+    engSynopsis:
+      "A small town is trapped under an invisible and impenetrable dome, and the residents must fight to survive while facing internal conflicts and external threats.",
+    coverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/c2/87/c2873aed9e77f67926885cc8283e974a.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/715Op9T6RYL._UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "The Secretary of Dreams: Volume 2",
+    year: 2010,
+    synopsis: "N/A",
+    engSynopsis:
+      "A collection of illustrated versions of Stephen King's short stories, with artwork by Glenn Chadbourne.",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/A1Psm5TvUBL._AC_UF1000,1000_QL80_.jpg",
+    onlyEnglish: true,
+    type: "short_story_collection",
+  },
+  {
+    title: "Blaockade Billy",
+    engTitle: "Blockade Billy",
+    year: 2010,
+    synopsis:
+      "Una novela corta sobre un jugador de béisbol llamado Blockade Billy, que se convierte en una leyenda después de un trágico accidente.",
+    engSynopsis:
+      "A novella about a baseball player named Blockade Billy, who becomes a legend after a tragic accident.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/813969IqjwL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/0/05/Blockade_Billy.jpg",
+    type: "short_novella",
+  },
+  {
+    title: "Todo Oscuro, Sin Estrellas",
+    engTitle: "Full Dark, No Stars",
+    year: 2010,
+    synopsis:
+      "Una colección de cuatro novelas cortas que exploran temas de venganza, redención y la oscuridad humana.",
+    engSynopsis:
+      "A collection of four novellas that explore themes of revenge, redemption, and human darkness.",
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/96/d4/96d409413533e3db9345712e471c017a.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/61GwNQzjXXL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_novella_collection",
+  },
+  {
+    title: "22/11/63",
     engTitle: "11/22/63",
     year: 2011,
     synopsis:
@@ -699,6 +967,45 @@ engCoverUrl:
       "A time traveler attempts to prevent the assassination of United States President John F. Kennedy.",
     coverUrl:
       "https://m.media-amazon.com/images/I/71Tunc9uXEL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81pu9otKwJL._UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "N/A",
+    engTitle: "American Vampire",
+    year: 2010,
+    engSynopsis:
+      "A comic book series that follows the story of a new type of vampire that emerges in America throughout different historical periods.",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81s+qj8n9eL._AC_UF1000,1000_QL80_.jpg",
+    type: "comic_book_series",
+    onlyEnglish: true,
+  },
+  {
+    title: "La Torre Oscura: El Viento por la Cerradura",
+    engTitle: "The Dark Tower: The Wind Through the Keyhole",
+    year: 2012,
+    synopsis:
+      "Una novela intercalada en la serie La Torre Oscura, que sigue al pistolero Roland mientras narra una historia de su juventud y una aventura que tuvo con su compañero de Ka; Jamie DeCurry.",
+    engSynopsis:
+      "A novel intercalated in the Dark Tower series, which follows the gunslinger Roland as he narrates a story from his youth and an adventure he had with his Ka-tet companion, Jamie DeCurry.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/911S4FZHT2L._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/813duH5KDgL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Joyland",
+    engTitle: "Joyland",
+    year: 2013,
+    synopsis:
+      "Un joven universitario consigue un trabajo de verano en un parque de atracciones llamado Joyland, donde se encuentra con un misterio relacionado con un asesinato ocurrido años atrás.",
+    engSynopsis:
+      "A young college student gets a summer job at an amusement park called Joyland, where he encounters a mystery related to a  murder that occurred years ago.",
+    coverUrl:
+    "https://www.penguinlibros.com/mx/2606493-large_default/joyland.webp",
+    engCoverUrl:
+    "https://m.media-amazon.com/images/I/81uVmogJ9EL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     title: "Doctor Sueño",
@@ -710,7 +1017,260 @@ engCoverUrl:
       "Danny Torrance, now an adult, struggles with his own demons while protecting a young girl with similar powers.",
     coverUrl:
       "https://m.media-amazon.com/images/I/71Ulrik4LeL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71ZwaISWSGL._UF1000,1000_QL80_.jpg"
   },
+  {
+    title: "Mr. Mercedes",
+    engTitle: "Mr. Mercedes",
+    year: 2014,
+    synopsis:
+      "Un exdetective retirado recibe cartas de un asesino en serie que amenaza con cometer nuevos crímenes.",
+    engSynopsis:
+      "A retired detective receives letters from a serial killer who threatens to commit new crimes.",
+    coverUrl:
+      "https://www.penguinlibros.com/mx/1729548/mr-mercedes-trilogia-bill-hodges-1.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91ejxgOhBJL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "Revival",
+    engTitle: "Revival",
+    year: 2014,
+    synopsis:
+      "Un joven se obsesiona con un predicador carismático que realiza experimentos peligrosos relacionados con la vida después de la muerte.",
+    engSynopsis:
+      "A young man becomes obsessed with a charismatic preacher who conducts dangerous experiments related to life after death.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81yimImONOL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81PaljyJOKL.jpg"
+  },
+  {
+    title: "Quien Pierde Paga",
+    engTitle: "Finders Keepers",
+    year: 2015,
+    synopsis:
+      "Un joven encuentra un manuscrito inédito de un famoso autor y se convierte en el objetivo de un asesino obsesionado con el escritor.",
+    engSynopsis:
+      "A young man finds an unpublished manuscript by a famous author and becomes the target of a killer obsessed with the writer.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81ARQDWr4nL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81kL+XBSbHL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "El Bazar de los Malos Sueños",
+    engTitle: "The Bazaar of Bad Dreams",
+    year: 2015,
+    synopsis:
+      "Antología de cuentos (6.ª) - Colección de 20 relatos cortos. ",
+    engSynopsis:
+    "Short story anthology (6th) - Collection of 20 short stories.",
+    coverUrl:
+      "https://www.penguinlibros.com/mx/3528375/el-bazar-de-los-malos-suenos.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71FRevXbbKL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_story_collection",
+  },
+  {
+    title: "Fin de Guardia",
+    engTitle: "End of Watch",
+    year: 2016,
+    synopsis:
+      "El tercer libro de la trilogía Bill Hodges, que sigue al detective retirado Bill Hodges mientras enfrenta a un asesino en serie que ha escapado de la justicia.",
+    engSynopsis:
+      "The third book in the Bill Hodges trilogy, which follows retired detective Bill Hodges as he faces a serial killer who has escaped justice.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/8118BaG5boL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81x02M5nYgL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "La Caja de Botones de Gwendy",
+    engTitle: "Gwendy's Button Box",
+    year: 2017,
+    synopsis:
+      "Una joven llamada Gwendy Peterson recibe una misteriosa caja de botones que le otorga poderes, pero también la pone en peligro.",
+    engSynopsis:
+      "A young girl named Gwendy Peterson receives a mysterious button box that grants her powers, but also puts her in danger.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81PJ5kpPd+L.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91cftc0wBIL._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    title: "Bellas Durmientes",
+    engTitle: "Sleeping Beauties",
+    year: 2017,
+    synopsis:
+      "En un futuro cercano, una misteriosa enfermedad hace que las mujeres se envuelvan en capullos y se vuelvan violentas si alguien intenta despertarlas.",
+    engSynopsis:
+      "In the near future, a mysterious disease causes women to wrap themselves in cocoons and become violent if someone tries to wake them up.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91Swfh5DrCL.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71+n9XGEl+L.jpg",
+  },
+  {
+    title: "El Visitante",
+    engTitle: "The Outsider",
+    year: 2018,
+    synopsis:
+      "Un detective investiga un brutal asesinato de un niño, pero las pruebas apuntan a un sospechoso que tiene una coartada sólida.",
+    engSynopsis:
+      "A detective investigates a brutal child murder, but the evidence points to a suspect with a solid alibi.",
+    coverUrl:
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/76/6a/766aecf06804f6d829c5c70538013374.jpg",
+    engCoverUrl:
+      "https://images.cdn2.buscalibre.com/fit-in/360x360/39/ea/39eabde9577195894d96274ea35c6537.jpg"
+  },
+  {
+    title: "Elevación",
+    engTitle: "Elevation",
+    year: 2018,
+    synopsis:
+      "Un hombre en un pequeño pueblo de Maine comienza a experimentar cambios físicos y emocionales inexplicables mientras lucha por mantener su vida normal.",
+    engSynopsis:
+      "A man in a small town in Maine begins to experience inexplicable physical and emotional changes while struggling to maintain his normal life.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91CC+xe7x+L._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81K3iVN9w4L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "Por los Aires",
+    engTitle: "Flight or Fright",
+    year: 2019,
+    synopsis:
+      "Una antología de cuentos de terror relacionados con el tema de volar, editada por Stephen King y Bev Vincent.",
+    engSynopsis:
+      "An anthology of horror stories related to the theme of flying, edited by Stephen King and Bev Vincent.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/71GUxxxfSqL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71SLmBse-xL.jpg",
+    type: "short_story_collection",
+  },
+  {
+    title: "El Instituto",
+    engTitle: "The Institute",
+    year: 2019,
+    synopsis:
+      "Un niño con habilidades especiales es secuestrado y llevado a un instituto donde se realizan experimentos en niños con poderes psíquicos.",
+    engSynopsis:
+      "A child with special abilities is kidnapped and taken to an institute where experiments are conducted on children with psychic powers.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81ZzH3rTnML._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71T834LGyHL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "La Sangre Manda",
+    engTitle: "If It Bleeds",
+    year: 2020,
+    synopsis:
+      "5.ª Colección de cuatro novelas. Contiene el relato homónimo La sangre manda, continuación de la saga de Mr. Mercedes",
+    engSynopsis:
+      "5th Collection of four novels. Contains the eponymous story If It Bleeds, a continuation of the Mr. Mercedes saga",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91gaWCCwtiL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81aBeZfDOkL.jpg",
+    type: "short_novella_collection",
+  },
+  {
+    title: "Después",
+    engTitle: "Later",
+    year: 2021,
+    synopsis:
+      "Un joven con la capacidad de ver y comunicarse con los muertos se ve envuelto en un caso de asesinato que involucra a su madre.",
+    engSynopsis:
+      "A young man with the ability to see and communicate with the dead becomes involved in a murder case that involves his mother.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81u6Wc83gjL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/81EkmsU-OoL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "Billy Summers",
+    engTitle: "Billy Summers",
+    year: 2021,
+    synopsis:
+      "Un asesino a sueldo con un código moral decide aceptar un último trabajo antes de retirarse.",
+    engSynopsis:
+      "A hitman with a moral code decides to take on one last job before retiring.",
+    coverUrl:
+      "https://www.penguinlibros.com/mx/1750969/billy-summers-edicion-en-espanol.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/814Zh1QQJhL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    title: "La Última Misión de Gwendy",
+    engTitle: "Gwendy's Final Task",
+    year: 2022,
+    synopsis:
+      "Gwendy enfrenta su última misión en un mundo lleno de misterios y peligros.",
+    engSynopsis:
+      "Gwendy faces her final task in a world full of mysteries and dangers.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91La3B0PPHL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/91+QsC+9PzL._SY522_.jpg"
+  },
+  {
+    title: "Cuento de Hadas",
+    engTitle: "Fairy Tale",
+    year: 2022,
+    synopsis:
+      "Un joven descubre un mundo secreto lleno de magia y peligro, donde debe enfrentarse a fuerzas oscuras para salvar a este mundo y al suyo propio.",
+    engSynopsis:
+      "A young man discovers a secret world full of magic and danger, where he must confront dark forces to save this world and his own.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/91eyIM8LeNL._AC_UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/612BYerla-L.jpg"
+  },
+  {
+    title: "Holly",
+    engTitle: "Holly",
+    year: 2023,
+    synopsis:
+      "Holly Gibney, un personaje recurrente en la obra de Stephen King, se enfrenta a un nuevo caso que pone a prueba sus habilidades y su determinación.",
+    engSynopsis:
+      "Holly Gibney, a recurring character in Stephen King's work, faces a new case that tests her skills and determination.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81ulWtxS1KL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/815oQ6G6HDL.jpg"
+  },
+  {
+    title: "Si Te Gusta la Oscuridad",
+    engTitle: "You Like it Darker",
+    year: 2023,
+    synopsis:
+    "Antología de cuentos (7.ª) - Colección de 12 relatos cortos",
+    engSynopsis:
+    "Short story anthology (7th) - Collection of 12 short stories",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/81T+7yO3gYL._UF1000,1000_QL80_.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/71UTAmoNddL._AC_UF1000,1000_QL80_.jpg",
+    type: "short_story_collection",
+  },
+  {
+    title: "No Tengas Miedo",
+    engTitle: "Never Flintch",
+    year: 2024,
+    synopsis:
+      "Una historia con varios hilos narrativos, protagonizada por la querida detective Holly Gibney y con un dinámico elenco de personajes nuevos.",
+    engSynopsis:
+      "A story with multiple narrative threads, starring the beloved detective Holly Gibney and featuring a dynamic cast of new characters.",
+    coverUrl:
+      "https://m.media-amazon.com/images/I/71xkhH69LFL.jpg",
+    engCoverUrl:
+      "https://m.media-amazon.com/images/I/716D6MziioL._AC_UF1000,1000_QL80_.jpg",
+  }
 ];
 
 async function main() {

@@ -9,21 +9,12 @@
   );
 
   let currentQuoteIndex = $state(0);
-  const quotes = [
-    { text: "Books are a uniquely portable magic.", book: "On Writing" },
-    {
-      text: "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win.",
-      book: "The Shining",
-    },
-    {
-      text: "We make up horrors to help us cope with the real ones.",
-      book: "Dance Macabre",
-    },
-    {
-      text: "The trust of the innocent is the liar's most useful tool.",
-      book: "Needful Things",
-    },
-  ];
+  const quotes = $derived([
+    { text: translations[currentLang].quote1Text, book: translations[currentLang].quote1Book },
+    { text: translations[currentLang].quote2Text, book: translations[currentLang].quote2Book },
+    { text: translations[currentLang].quote3Text, book: translations[currentLang].quote3Book },
+    { text: translations[currentLang].quote4Text, book: translations[currentLang].quote4Book },
+  ]);
 
   $effect(() => {
     const interval = setInterval(() => {
@@ -131,8 +122,8 @@
         <h1
           class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-stone-800 leading-[0.95] sm:leading-[0.9] mb-4 sm:mb-6"
         >
-          Every Story.<br />
-          <span class="italic font-normal text-stone-500">Every Nightmare.</span
+          {translations[currentLang].heroTagline1}<br />
+          <span class="italic font-normal text-stone-500">{translations[currentLang].heroTagline2}</span
           >
         </h1>
 
@@ -141,7 +132,7 @@
           class="text-stone-600 max-w-xl mx-auto leading-relaxed mb-8 sm:mb-12 text-xs sm:text-sm"
           style="font-family: 'JetBrains Mono', monospace;"
         >
-          Track your journey through Stephen King's universe.
+          {translations[currentLang].heroDescription}
           <span class="text-red-700">_</span>
         </p>
 
@@ -151,7 +142,7 @@
           class="inline-block border border-stone-400 hover:border-red-700 hover:bg-red-700/10 px-8 sm:px-12 py-3 sm:py-4 text-stone-700 hover:text-red-800 transition-all duration-300 tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm"
           style="font-family: 'JetBrains Mono', monospace;"
         >
-          Begin
+          {translations[currentLang].heroButton}
         </a>
       </div>
     </div>
@@ -161,7 +152,7 @@
       <div class="flex flex-col items-center gap-2 text-stone-500">
         <span
           class="text-[10px] sm:text-xs tracking-widest uppercase"
-          style="font-family: 'JetBrains Mono', monospace;">Scroll</span
+          style="font-family: 'JetBrains Mono', monospace;">{translations[currentLang].scroll}</span
         >
         <div
           class="w-px h-6 sm:h-8 bg-gradient-to-b from-stone-500 to-transparent"
@@ -202,7 +193,7 @@
         <div>
           <span
             class="text-red-700 tracking-[0.2em] sm:tracking-[0.3em] uppercase text-[10px] sm:text-xs block mb-1 sm:mb-2"
-            style="font-family: 'JetBrains Mono', monospace;">The Library</span
+            style="font-family: 'JetBrains Mono', monospace;">{translations[currentLang].theLibrary}</span
           >
           <h2
             class="text-2xl sm:text-4xl md:text-5xl text-stone-800"
@@ -295,7 +286,7 @@
         class="text-stone-500 hover:text-red-700 transition-colors text-xs sm:text-sm tracking-wider uppercase mt-6 sm:mt-8 block sm:hidden"
         style="font-family: 'JetBrains Mono', monospace;"
       >
-        View All →
+        {translations[currentLang].viewAll} →
       </a>
     </div>
   </section>
@@ -310,7 +301,7 @@
     >
       <span
         class="text-red-700 tracking-[0.2em] sm:tracking-[0.3em] uppercase text-[10px] sm:text-xs block mb-6 sm:mb-8"
-        >How it works</span
+        >{translations[currentLang].howItWorks}</span
       >
 
       <div class="space-y-10 sm:space-y-16">
@@ -324,11 +315,10 @@
             <h3
               class="text-xl sm:text-2xl md:text-3xl text-stone-800 mb-2 sm:mb-4"
             >
-              Discover the complete bibliography
+              {translations[currentLang].step1Title}
             </h3>
             <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
-              Every novel, novella, short story collection, and non-fiction
-              work. From Carrie to Holly, nothing is left behind.
+              {translations[currentLang].step1Desc}
             </p>
           </div>
         </div>
@@ -344,12 +334,10 @@
             <h3
               class="text-xl sm:text-2xl md:text-3xl text-stone-800 mb-2 sm:mb-4"
             >
-              Mark what you've conquered
+              {translations[currentLang].step2Title}
             </h3>
             <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
-              Track read books, current reads, and your personal wishlist. Rate
-              them, add notes, remember every journey through Castle Rock and
-              Derry.
+              {translations[currentLang].step2Desc}
             </p>
           </div>
         </div>
@@ -365,11 +353,10 @@
             <h3
               class="text-xl sm:text-2xl md:text-3xl text-stone-800 mb-2 sm:mb-4"
             >
-              See the gaps in your shelf
+              {translations[currentLang].step3Title}
             </h3>
             <p class="text-stone-600 leading-relaxed text-sm sm:text-base">
-              Instantly know what you're missing. Find connections between
-              books. Plan your next descent into the King universe.
+              {translations[currentLang].step3Desc}
             </p>
           </div>
         </div>
@@ -396,15 +383,15 @@
       style="font-family: 'JetBrains Mono', monospace;"
     >
       <h2 class="text-3xl sm:text-4xl md:text-6xl text-stone-800 mb-6 sm:mb-8">
-        Ready to start<br />
-        <span class="italic text-stone-500">your collection?</span>
+        {translations[currentLang].ctaTitle1}<br />
+        <span class="italic text-stone-500">{translations[currentLang].ctaTitle2}</span>
       </h2>
       <a
         href="/catalog"
         class="inline-block bg-red-700 hover:bg-red-800 px-8 sm:px-12 md:px-16 py-4 sm:py-5 text-white transition-all duration-300 tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm"
         style="font-family: 'JetBrains Mono', monospace;"
       >
-        Enter the Library
+        {translations[currentLang].ctaButton}
       </a>
     </div>
   </section>
@@ -421,7 +408,7 @@
         class="text-stone-500 text-[10px] sm:text-xs text-center"
         style="font-family: 'JetBrains Mono', monospace;"
       >
-        A project for Constant Readers. Not affiliated with Stephen King.
+        {translations[currentLang].footerText}
       </p>
     </div>
   </footer>
