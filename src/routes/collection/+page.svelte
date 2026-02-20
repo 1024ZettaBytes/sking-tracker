@@ -9,7 +9,7 @@
     (data.session?.user?.language as Language) || "ENG",
   );
   let searchQuery = $state("");
-  let sortedBooks = $derived(data.collection.sort((a, b) => a.year - b.year).filter((book) =>
+  let sortedBooks = $derived([...data.collection].sort((a, b) => a.year - b.year).filter((book) =>
     book.title.toLowerCase().includes(searchQuery.toLowerCase()),
   ));
 
@@ -193,7 +193,7 @@
               class="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/20 focus:border-red-700 transition-all font-sans"
             />
           </div>
-      {#each sortedBooks as book}
+      {#each sortedBooks as book (book.id)}
         <div class="relative group">
           <!-- Timeline Dot -->
           <div
