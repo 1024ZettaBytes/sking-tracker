@@ -8,8 +8,10 @@
   let currentLang = $derived(
     (data.session?.user?.language as Language) || "ENG",
   );
-
-  let sortedBooks = $derived(data.collection.sort((a, b) => a.year - b.year));
+  let searchQuery = $state("");
+  let sortedBooks = $derived(data.collection.sort((a, b) => a.year - b.year).filter((book) =>
+    book.title.toLowerCase().includes(searchQuery.toLowerCase()),
+  ));
 
   let loadingState = $state<{
     bookId: number;
@@ -85,6 +87,7 @@
         >
           {translations[currentLang].myCollection}
         </h1>
+          <!-- Search Bar -->
 
         <!-- Desktop Profile -->
         <div class="hidden sm:block">
@@ -167,7 +170,29 @@
 
   <!-- Timeline Content -->
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  
     <div class="relative pl-8 sm:pl-12 border-l-2 border-stone-300 space-y-12">
+              <div class="relative w-full sm:w-auto">
+            <svg
+              class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder={translations[currentLang].searchPlaceholder}
+              bind:value={searchQuery}
+              class="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/20 focus:border-red-700 transition-all font-sans"
+            />
+          </div>
       {#each sortedBooks as book}
         <div class="relative group">
           <!-- Timeline Dot -->
